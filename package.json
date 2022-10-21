@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend development source code with HTML, CSS and JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quiwop/frontend.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "JS"
+  ],
+  "author": "David Santiago Avellaneda Montero <davellaneda.ingeniero@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quiwop/frontend/issues"
+  },
+  "homepage": "https://github.com/quiwop/frontend#readme"
+}
