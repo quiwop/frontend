@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Baloo Thambi 2", cursive;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  --light-mode-background: #f9f9f9;
+  --light-mode-elements: #ffffff;
+  --light-mode-text: #111517;
+  --light-mode-buttons: #fe725d;
+  --light-mode-icons: #000;
+  --light-mode-inputs: #f3f3f3;
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+body.dark-theme {
+  --light-mode-background: #1c1b25;
+  --light-mode-elements: #4d4d54;
+  --light-mode-text: #ffffff;
+  --light-mode-icons: #fff;
+  --light-mode-inputs: #4d4d54;
+}
+img,
+svg {
+  width: 100%;
+}
