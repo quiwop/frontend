@@ -1,4 +1,7 @@
+import { connected } from "../isLoggedIn.js";
 import formValidations from "./validations.js";
+
+connected();
 
 document.addEventListener("DOMContentLoaded", () => {
   formValidations();
