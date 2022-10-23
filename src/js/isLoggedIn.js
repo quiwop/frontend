@@ -32,3 +32,33 @@ export async function isLoggedIn() {
     window.location.href = "./login";
   }
 }
+
+export async function connected() {
+  if (localStorage.getItem("instiId") && localStorage.getItem("token")) {
+    try {
+      const instiId = localStorage.getItem("instiId");
+      const token = localStorage.getItem("token");
+      let options = {
+        headers: {
+          Authorization: "Bearer " + token,
+        },
+      };
+      const res = await fetch(`${domain()}/institutions/${instiId}`, options);
+      if (!res.ok) {
+        throw {
+          status: response.status,
+          statusText: response.statusText,
+        };
+      } else {
+        window.location.href = "./home";
+      }
+    } catch (err) {
+      localStorage.removeItem("instiId");
+      localStorage.removeItem("token");
+      window.location.href = "./login";
+    }
+  } else {
+    localStorage.removeItem("instiId");
+    localStorage.removeItem("token");
+  }
+}
