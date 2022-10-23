@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+Options -Indexes
+# DIRECTIVAS DE EXPIRACION
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType text/html "access plus 30 minutes"
+	ExpiresByType text/php "access plus 30 minutes"
+	ExpiresByType text/css "access plus 30 minutes"
+	ExpiresByType image/png "access plus 30 minutes"
+	ExpiresByType image/jpeg "access plus 30 minutes"
+	ExpiresByType application/x-javascript "access plus 30 minutes"
+	ExpiresByType application/javascript "access plus 30 minutes"
+	ExpiresByType application/x-icon "access plus 1 month"
+	ExpiresDefault "access plus 30 minutes"
+</IfModule>
