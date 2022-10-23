@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/b20c514afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/global.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | Quiwop</title>
+    <link rel="stylesheet" href="./src/css/login.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <main class="login">
+      <section class="login-container">
+        <a href="./index" class="login-logo">
+          <img
+            src="https://quiwop.github.io/media/Quiwop.png"
+            alt="Logotipo de Quiwop"
+          />
+        </a>
+        <div class="login-content">
+          <div class="login-content-title">
+            <a href="./index" class="login-icon-return">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h1 class="login-title">Iniciar sesión</h1>
+          </div>
+          <div class="login-container-form">
+            <form action="./home" method="POST" id="form">
+              <div class="login-container-inputs">
+                <div class="login-container-input">
+                  <label for="id">Número de identificación</label>
+                  <div class="login-input">
+                    <input
+                      type="number"
+                      name="id"
+                      id="id"
+                      placeholder="Número de identificación"
+                    />
+                    <div class="login-icon"></div>
+                  </div>
+                  <div class="login-alert-message"></div>
+                </div>
+                <div class="login-container-input">
+                  <label for="pwd">Contraseña</label>
+                  <div class="login-input">
+                    <input
+                      type="password"
+                      name="pwd"
+                      id="pwd"
+                      placeholder="Ingresa tu contraseña"
+                    />
+                    <div class="login-icon"></div>
+                  </div>
+                  <div class="login-alert-message"></div>
+                </div>
+              </div>
+              <div class="login-form-btn">
+                <button type="submit">
+                  <span class="complete"></span>
+                  <p><span>Iniciar </span><span>sesión</span></p>
+                  <span class="complete password"></span>
+                </button>
+              </div>
+            </form>
+            <div class="login-helpers">
+              <a href="">¿Olvidaste tu contraseña?</a>
+              <p>¿Aún no tienes cuenta? <a href="./signup">Registrarse</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/login/index.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
