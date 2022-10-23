@@ -4,6 +4,7 @@ export default function htmlHead() {
     `
       <!-- Global styles -->
       <link rel="stylesheet" href="./src/css/global.css" />
+      <link rel="stylesheet" href="./src/css/alerts.css" />;
       <!-- Favicon -->
       <link rel="shortcut icon" href="https://quiwop.github.io/media/favicon.png" />
       <!-- Font Family -->
