@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/b20c514afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/global.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | Quiwop</title>
+    <link rel="stylesheet" href="./src/css/signup.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <main class="signup">
+      <section class="signup-container">
+        <a href="./index" class="signup-logo">
+          <img
+            src="https://quiwop.github.io/media/Quiwop.png"
+            alt="Logotipo de Quiwop"
+          />
+        </a>
+        <div class="signup-content">
+          <div class="signup-content-title">
+            <a href="./index" class="signup-icon-return">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <h1 class="signup-title">Registrarse</h1>
+          </div>
+          <div class="signup-container-form">
+            <form>
+              <div class="signup-container-inputs">
+                <div class="signup-container-input">
+                  <label for="id">Número identificador</label>
+                  <div class="signup-input">
+                    <input
+                      type="number"
+                      name="id"
+                      id="id"
+                      placeholder="Ingresa un número"
+                      autocomplete="off"
+                    />
+                    <div class="signup-icon"></div>
+                  </div>
+                  <div class="signup-alert-message"></div>
+                </div>
+                <div class="signup-container-input">
+                  <label for="name">Nombre del ente educativo</label>
+                  <div class="signup-input">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Ingresa un nombre"
+                      autocomplete="off"
+                    />
+                    <div class="signup-icon"></div>
+                  </div>
+                  <div class="signup-alert-message"></div>
+                </div>
+                <div class="signup-container-input">
+                  <label for="email">Valida tu correo electrónico</label>
+                  <div class="signup-input">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Ingresa un email"
+                      autocomplete="off"
+                    />
+                    <div class="signup-icon"></div>
+                  </div>
+                  <div class="signup-alert-message"></div>
+                </div>
+                <div class="signup-container-input">
+                  <label for="country">Selecciona el país de origen</label>
+                  <div class="custom-select" style="width: 100%">
+                    <select name="country" id="country"></select>
+                  </div>
+                </div>
+                <div class="signup-container-input">
+                  <label for="pwd">Crea tu contraseña</label>
+                  <div class="signup-input">
+                    <input
+                      type="password"
+                      name="pwd"
+                      id="pwd"
+                      placeholder="Ingresa tu contraseña"
+                      autocomplete="off"
+                    />
+                    <div class="signup-icon"></div>
+                  </div>
+                  <div class="signup-alert-message"></div>
+                </div>
+              </div>
+              <div class="signup-form-btn">
+                <button type="submit">Registrarse</button>
+              </div>
+            </form>
+            <div class="signup-helpers">
+              <p>¿Ya tienes cuenta? <a href="./login">Iniciar sesión</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/signup/index.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
